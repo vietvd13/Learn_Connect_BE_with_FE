@@ -27,7 +27,7 @@ function save(){
     };
 
     http.onload = function(){
-        if(http.readyState = 4 && http.status == "200"){
+        if(http.readyState == 4 && http.status == 200){
             alert("Update successfully");
             window.location.href = "../../../FE/html/managementProduct.html";
         }else{
