@@ -20,10 +20,4 @@ app.listen(port, (req, res) => {
     console.log('Server running in port ' + port);
 });
 
-app.get('/test', (req, res) => {
-    res.json({
-        "hello": "abc"
-    })
-})
-
 
