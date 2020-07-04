@@ -1,0 +1,47 @@
+/* Start CSS Bootstrap */
+
+.offcanvas-header{ display:none; }
+
+@media (max-width: 992px) {
+  .offcanvas-header{ display:block; }
+  .navbar-collapse {
+    position: fixed;
+    top:0; 
+    bottom: 0;
+    left: 100%;
+    width: 100%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    overflow-y: auto;
+    visibility: hidden;
+    background-color: black;
+    transition: visibility .2s ease-in-out, -webkit-transform .2s ease-in-out;
+  }
+  .navbar-collapse.show {
+    visibility: visible;
+    transform: translateX(-100%);
+  }
+}
+
+/* End CSS Bootstrap */
+
+/* Start CSS Custom */
+
+/* Disable focus */
+button.navbar-toggler:focus {
+    outline: none;
+}
+
+/* Color navbar */
+nav.navbar.navbar-expand-lg.navbar-dark.bg-primary {
+    background-color: #dc3545 !important;
+}
+
+a.dropdown-item:hover {
+    background-color: #d2dae2;
+}
+
+#title{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
