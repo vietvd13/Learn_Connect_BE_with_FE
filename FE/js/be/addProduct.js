@@ -11,12 +11,12 @@ function add(){
     };
 
     http.onload = function(){
-        if(http.readyState = 4 && http.status == "201"){
+        if(this.readyState == 4 && this.status == 200){
             alert("Add successfully");
             window.location.href = "../../../FE/html/managementProduct.html";
         }else{
             alert("Add failed");
-            window.location.href = "../../../FE/html/addProduct.html";
+            window.location.href = "../../html/addProduct.html";
         }
     }
 
